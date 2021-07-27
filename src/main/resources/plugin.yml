@@ -1,0 +1,7 @@
+name: AntyLogout
+version: ${project.version}
+main: me.kvlike.antylogout.AntyLogout
+api-version: 1.16
+commands:
+  leave:
+    usage: /leave
