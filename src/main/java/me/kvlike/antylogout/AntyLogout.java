@@ -16,18 +16,6 @@ public final class AntyLogout extends JavaPlugin {
     public static ArrayList<Player> combat;
     public static Map<Player, Timer> timerMap;
 
-    private void deleteDir(File file) {
-        File[] contents = file.listFiles();
-        if (contents != null) {
-            for (File f : contents) {
-                if (! Files.isSymbolicLink(f.toPath())) {
-                    deleteDir(f);
-                }
-            }
-        }
-        file.delete();
-    }
-
     @Override
     public void onEnable() {
 
@@ -45,12 +33,4 @@ public final class AntyLogout extends JavaPlugin {
 
     }
 
-    @Override
-    public void onDisable() {
-
-        File logs = new File("logs");
-
-        deleteDir(logs);
-
-    }
 }
